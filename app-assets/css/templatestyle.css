@@ -1,0 +1,19 @@
+.main-content.hide_block{
+    display: none;
+}
+.main-content.active_block{
+    display: block;
+}
+
+.toggle_div{
+    display: none;
+}
+
+canvas {
+    width: 300px !important;
+    height: 300px !important;
+}
+.modal-style{
+    overflow:auto;
+
+}
