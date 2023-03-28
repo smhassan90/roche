@@ -287,26 +287,68 @@ $(document).ready(function(){
     generatePie('khiPositivePie', 2, 1, 0);
     generatePie('lhrPositivePie', 23, 1, 1);
 
-    drawTree();
+
+
+    $('.positiveScreening').click(function(){
+        var type = $(this).attr('data-type');
+        drawTree(type);
+    });
+
 
 });
-function drawTree() {
-    var testData = [
+function getData(type){
+    var data = [];
 
-        {id: 1, name: 'High Risk (30)', parent: 0},
-        {id: 2, name: 'Reached Hospital (20)', parent: 1},
-        {id: 3, name: 'Did not Reached Hospital(10)', parent: 1},
-        {id: 4, name: 'Positive (15)', parent: 2},
-        {id: 5, name: 'Negative (3)', parent: 2},
-        {id: 6, name: 'Results Awaited (2)', parent: 2},
-        {id: 7, name: 'Therapy Started (10)', parent: 4},
-        {id: 8, name: 'Therapy Pending (5)', parent: 4},
+    if(type==='total'){
+        data  =  [
 
-    ];
+                        {id: 1, name: 'Total High Risk (30)', parent: 0},
+                        {id: 2, name: 'Reached Hospital (20)', parent: 1},
+                        {id: 3, name: 'Did not Reached Hospital(10)', parent: 1},
+                        {id: 4, name: 'Positive (15)', parent: 2},
+                        {id: 5, name: 'Negative (3)', parent: 2},
+                        {id: 6, name: 'Results Awaited (2)', parent: 2},
+                        {id: 7, name: 'Therapy Started (10)', parent: 4},
+                        {id: 8, name: 'Therapy Pending (5)', parent: 4},
+
+                    ];
+    }else if(type==='karachi'){
+        data  =  [
+
+                                {id: 1, name: 'Karachi High Risk (30)', parent: 0},
+                                {id: 2, name: 'Reached Hospital (20)', parent: 1},
+                                {id: 3, name: 'Did not Reached Hospital(10)', parent: 1},
+                                {id: 4, name: 'Positive (15)', parent: 2},
+                                {id: 5, name: 'Negative (3)', parent: 2},
+                                {id: 6, name: 'Results Awaited (2)', parent: 2},
+                                {id: 7, name: 'Therapy Started (10)', parent: 4},
+                                {id: 8, name: 'Therapy Pending (5)', parent: 4},
+
+                            ];
+    }else if(type==='lahore'){
+        data  =  [
+
+                                {id: 1, name: 'Lahore High Risk (30)', parent: 0},
+                                {id: 2, name: 'Reached Hospital (20)', parent: 1},
+                                {id: 3, name: 'Did not Reached Hospital(10)', parent: 1},
+                                {id: 4, name: 'Positive (15)', parent: 2},
+                                {id: 5, name: 'Negative (3)', parent: 2},
+                                {id: 6, name: 'Results Awaited (2)', parent: 2},
+                                {id: 7, name: 'Therapy Started (10)', parent: 4},
+                                {id: 8, name: 'Therapy Pending (5)', parent: 4},
+
+                            ];
+    }
+    return data;
+}
+
+function drawTree( type) {
+    var data = getData(type);
+
 
     org_chart = $('#orgChart').orgChart({
 
-        data: testData,// your data
+        data: data,// your data
 
         showControls: false,// display add or remove node button.
 

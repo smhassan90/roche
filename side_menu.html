@@ -175,12 +175,12 @@
                         <div class="col-xl-3 col-lg-6 col-12">
                             <div class="card bg-red">
                                 <div class="card-body">
-                                    <div class="px-3 py-3">
+                                    <div class="px-3 py-3 positiveScreening" data-type="total" data-toggle="modal" data-target="#positivePatientsBreakdown">
                                         <div class="media">
-                                            <div class="align-center">
+                                            <div class="align-center" >
                                                 <i class="icon-pencil text-white font-large-2 float-left"></i>
                                             </div>
-                                            <div class="media-body text-white text-right" data-toggle="modal" data-target="#exampleModalCenter">
+                                            <div class="media-body text-white text-right"  >
                                                 <h3 class="text-white"> 28 </h3>
                                                 <span>Total positive patients in Advance Screening</span>
                                             </div>
@@ -257,7 +257,7 @@
                         <div class="col-xl-3 col-lg-6 col-12">
                             <div class="card bg-red">
                                 <div class="card-body">
-                                    <div class="px-3 py-3">
+                                    <div class="px-3 py-3 positiveScreening" data-toggle="modal" data-type="karachi" data-target="#positivePatientsBreakdown">
                                         <div class="media">
                                             <div class="align-center">
                                                 <i class="icon-pencil text-white font-large-2 float-left"></i>
@@ -338,7 +338,7 @@
                         <div class="col-xl-3 col-lg-6 col-12">
                             <div class="card bg-red">
                                 <div class="card-body">
-                                    <div class="px-3 py-3">
+                                    <div class="px-3 py-3 positiveScreening" data-toggle="modal" data-type="lahore" data-target="#positivePatientsBreakdown">
                                         <div class="media">
                                             <div class="align-center">
                                                 <i class="icon-pencil text-white font-large-2 float-left"></i>
@@ -382,11 +382,12 @@
     </div>
 
 </div>
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<!--First modal-->
+<div class="modal fade" id="positivePatientsBreakdown" tabindex="-1" role="dialog" aria-labelledby="positivePatientsBreakdownTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Total positive patients in Advance Screening</h5>
+                <h5 class="modal-title" id="positivePatientsBreakdownTitle">Total positive patients in Advance Screening</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
