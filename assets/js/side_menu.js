@@ -144,98 +144,98 @@ function generateHierarchy(){
                                 }
                             ]
                     },
-                    {						
+                    {
                         text: "Helpline",
                         nodes:
                             [
-								{
-									text: "Total Calls Attempted: (640)",
-									nodes:
-										[
-											{
-												text: "Total Calls Responded: (96) ",
-												nodes: 
-													[
-														{
-															text : "+ve Patients (3) ",
-															nodes:
-																[
-																	{
-																		text: "Breast Cancer: (1) ",
-															nodes:
-																[
-																	{
-																		text: "patient receiving therapy: () "
-																	},
-																	{   
-																		text: "patient pending therapy: () "
-																	},
-																]
-																	},
-																	
-																	{   
-																		text: "Cervical Cancer: (1) ",
-																		nodes:
-																[
-																	{
-																		text: "Patient Receiving Therapy: () "
-																	},
-																	{   
-																		text: "Patient Pending Therapy: () "
-																	},
-																]
-																	},
-																	
-																	{   
-																		text: "Ovarian Cancer: (1) ",
-																		nodes:
-																[
-																	{
-																		text: "Patient Receiving Therapy: () "
-																	},
-																	{   
-																		text: "Patient Pending Therapy: () "
-																	},
-																]
-																	}
-																]
-														},
-														{
-															text : "Call Again: (14) "
-														},														
-														{
-															text: "Not Interested: (79) ",
-															nodes:
-																[
-																	{
-																		text: "Personal: (45) "
-																	},
-																	{   
-																		text: "Social: (3) "
-																	},
-																	{   
-																		text: "Financial: (31) "
-																	},
-																	{   
-																		text: "Other: (0) "
-																	}
-																]
-														},
-														
-													]
-											},
-											{
-												text: "Did Not Respond: (344) ",
-											},
-											{
-												text: "Invalid Numbers: (200) ",
-											},
-										]
-								},
-							]		
+                                {
+                                    text: "Total Calls Attempted: (640)",
+                                    nodes:
+                                        [
+                                            {
+                                                text: "Total Calls Responded: (96) ",
+                                                nodes:
+                                                    [
+                                                        {
+                                                            text : "+ve Patients (3) ",
+                                                            nodes:
+                                                                [
+                                                                    {
+                                                                        text: "Breast Cancer: (1) ",
+                                                                        nodes:
+                                                                            [
+                                                                                {
+                                                                                    text: "patient receiving therapy: () "
+                                                                                },
+                                                                                {
+                                                                                    text: "patient pending therapy: () "
+                                                                                },
+                                                                            ]
+                                                                    },
+
+                                                                    {
+                                                                        text: "Cervical Cancer: (1) ",
+                                                                        nodes:
+                                                                            [
+                                                                                {
+                                                                                    text: "Patient Receiving Therapy: () "
+                                                                                },
+                                                                                {
+                                                                                    text: "Patient Pending Therapy: () "
+                                                                                },
+                                                                            ]
+                                                                    },
+
+                                                                    {
+                                                                        text: "Ovarian Cancer: (1) ",
+                                                                        nodes:
+                                                                            [
+                                                                                {
+                                                                                    text: "Patient Receiving Therapy: () "
+                                                                                },
+                                                                                {
+                                                                                    text: "Patient Pending Therapy: () "
+                                                                                },
+                                                                            ]
+                                                                    }
+                                                                ]
+                                                        },
+                                                        {
+                                                            text : "Call Again: (14) "
+                                                        },
+                                                        {
+                                                            text: "Not Interested: (79) ",
+                                                            nodes:
+                                                                [
+                                                                    {
+                                                                        text: "Personal: (45) "
+                                                                    },
+                                                                    {
+                                                                        text: "Social: (3) "
+                                                                    },
+                                                                    {
+                                                                        text: "Financial: (31) "
+                                                                    },
+                                                                    {
+                                                                        text: "Other: (0) "
+                                                                    }
+                                                                ]
+                                                        },
+
+                                                    ]
+                                            },
+                                            {
+                                                text: "Did Not Respond: (344) ",
+                                            },
+                                            {
+                                                text: "Invalid Numbers: (200) ",
+                                            },
+                                        ]
+                                },
+                            ]
                     },
-                
-				]
+
+                ]
         },
     ];
 
@@ -287,4 +287,41 @@ $(document).ready(function(){
     generatePie('khiPositivePie', 2, 1, 0);
     generatePie('lhrPositivePie', 23, 1, 1);
 
+    drawTree();
+
 });
+function drawTree() {
+    var testData = [
+
+        {id: 1, name: 'High Risk (30)', parent: 0},
+        {id: 2, name: 'Reached Hospital (20)', parent: 1},
+        {id: 3, name: 'Did not Reached Hospital(10)', parent: 1},
+        {id: 4, name: 'Positive (15)', parent: 2},
+        {id: 5, name: 'Negative (3)', parent: 2},
+        {id: 6, name: 'Results Awaited (2)', parent: 2},
+        {id: 7, name: 'Therapy Started (10)', parent: 4},
+        {id: 8, name: 'Therapy Pending (5)', parent: 4},
+
+    ];
+
+    org_chart = $('#orgChart').orgChart({
+
+        data: testData,// your data
+
+        showControls: false,// display add or remove node button.
+
+        allowEdit: false,// click the node's title to edit
+
+        onAddNode: function (node) {
+        },
+
+        onDeleteNode: function (node) {
+        },
+
+        onClickNode: function (node) {
+        },
+
+        newNodeText: 'Add Child'// text of add button
+
+    });
+}

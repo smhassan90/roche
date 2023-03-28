@@ -33,6 +33,7 @@
     <link rel="stylesheet" type="text/css" href="./app-assets/fonts/simple-line-icons/style.css">
     <link rel="stylesheet" type="text/css" href="./assets/scss/bootstrap-treeview.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/jquery.orgchart.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -63,58 +64,58 @@
         <div class="sidebar-background"></div>
     </div>
 
-<!--
-    <nav class="navbar navbar-expand-lg navbar-light bg-faded">
-        <div class="container-fluid">
+    <!--
+        <nav class="navbar navbar-expand-lg navbar-light bg-faded">
+            <div class="container-fluid">
 
 
 
-            <h4 class="navbar-header font-weight-bold">
+                <h4 class="navbar-header font-weight-bold">
 
 
-            </h4>
-            <h5 class="navbar-header font-weight-bold">
+                </h4>
+                <h5 class="navbar-header font-weight-bold">
 
-            </h5>
+                </h5>
 
-            <button type="button" data-toggle="collapse" class="navbar-toggle d-lg-none float-left">
-                <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
-                    class="icon-bar"></span><span class="icon-bar"></span></button>
+                <button type="button" data-toggle="collapse" class="navbar-toggle d-lg-none float-left">
+                    <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span></button>
 
-            <span class="d-lg-none navbar-right navbar-collapse-toggle"><a class="open-navbar-container"><i class="ft-more-vertical"></i></a></span>
+                <span class="d-lg-none navbar-right navbar-collapse-toggle"><a class="open-navbar-container"><i class="ft-more-vertical"></i></a></span>
 
-            <div class="navbar-container">
-                <div id="navbarSupportedContent" class="collapse navbar-collapse">
-                    <ul class="navbar-nav">
- 
-						<li class="nav-item mt-1 navbar-search text-left dropdown"><a id="search" href="#" data-toggle="dropdown" class="nav-link dropdown-toggle"><i class="ft-search blue-grey darken-4"></i></a>
-                            <div aria-labelledby="search" class="search dropdown-menu dropdown-menu-right">
-                                <div class="arrow_box_right">
-                                    <form role="search" class="navbar-form navbar-right">
-                                        <div class="position-relative has-icon-right mb-0">
-                                            <input id="navbar-search" type="text" placeholder="Search" class="form-control"/>
-                                            <div class="form-control-position navbar-search-close float-right"><i class="ft-x"></i></div>
-                                        </div>
-                                    </form>
+                <div class="navbar-container">
+                    <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+
+                            <li class="nav-item mt-1 navbar-search text-left dropdown"><a id="search" href="#" data-toggle="dropdown" class="nav-link dropdown-toggle"><i class="ft-search blue-grey darken-4"></i></a>
+                                <div aria-labelledby="search" class="search dropdown-menu dropdown-menu-right">
+                                    <div class="arrow_box_right">
+                                        <form role="search" class="navbar-form navbar-right">
+                                            <div class="position-relative has-icon-right mb-0">
+                                                <input id="navbar-search" type="text" placeholder="Search" class="form-control"/>
+                                                <div class="form-control-position navbar-search-close float-right"><i class="ft-x"></i></div>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
+                            </li>
 
-                        <li class="dropdown nav-item mr-0 float-right"><a id="dropdownBasic3" href="#" data-toggle="dropdown" class="nav-link position-relative dropdown-user-link dropdown-toggle"><span class="avatar avatar-online"><img id="navbar-avatar" src="./app-assets/img/portrait/small/avatar-s-1.jpg" alt="avatar"/></span>
-                            <p class="d-none">User Settings</p></a>
-                            <div aria-labelledby="dropdownBasic3" class="dropdown-menu dropdown-menu-right">
-                                <div class="arrow_box_right">
-                                    <a href="javascript:;" class="dropdown-item btnLogout"><i class="ft-power mr-2"></i><span>Logout</span></a>
+                            <li class="dropdown nav-item mr-0 float-right"><a id="dropdownBasic3" href="#" data-toggle="dropdown" class="nav-link position-relative dropdown-user-link dropdown-toggle"><span class="avatar avatar-online"><img id="navbar-avatar" src="./app-assets/img/portrait/small/avatar-s-1.jpg" alt="avatar"/></span>
+                                <p class="d-none">User Settings</p></a>
+                                <div aria-labelledby="dropdownBasic3" class="dropdown-menu dropdown-menu-right">
+                                    <div class="arrow_box_right">
+                                        <a href="javascript:;" class="dropdown-item btnLogout"><i class="ft-power mr-2"></i><span>Logout</span></a>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
+                            </li>
 
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
--->
+        </nav>
+    -->
     <div id="admin_main_container" class="main-panel">
         <section id="dashboard_main_form" class="main-content hide_block">
             <div class="content-wrapper">
@@ -179,7 +180,7 @@
                                             <div class="align-center">
                                                 <i class="icon-pencil text-white font-large-2 float-left"></i>
                                             </div>
-                                            <div class="media-body text-white text-right">
+                                            <div class="media-body text-white text-right" data-toggle="modal" data-target="#exampleModalCenter">
                                                 <h3 class="text-white"> 28 </h3>
                                                 <span>Total positive patients in Advance Screening</span>
                                             </div>
@@ -380,6 +381,23 @@
         </section>
     </div>
 
+</div>
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Total positive patients in Advance Screening</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body modal-style">
+                <div id="orgChart"></div>
+
+
+            </div>
+        </div>
+    </div>
 </div>
 <!-- ////////////////////////////////////////////////////////////////////////////-->
 
@@ -651,6 +669,7 @@
 <script src="./assets/js/dataentry.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 <script src="./app-assets/vendors/js/chartist.min.js"></script>
+<script src="./app-assets/js/jquery.orgchart.js"></script>
 
 
 <script src="./assets/js/side_menu.js"></script>
