@@ -47423,11 +47423,6 @@ ul.no-list-style {
 .app-sidebar {
   z-index : 5;
 }
-
-.main-panel {
-  margin-top : 85px;
-}
-
 .navbar .show > .dropdown-menu .arrow_box_right {
   position : relative;
 }
