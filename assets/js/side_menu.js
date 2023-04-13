@@ -1,242 +1,96 @@
 function generateHierarchy(){
     var mytree = [
-        {
-            text: " Reports of Referral center ",
-            nodes:
-                [
-                    {
-                        text: "Karachi",
-                        nodes:
-                            [
-                                {
-                                    text: " Patients at JPCM ",
-                                    nodes: [
-                                        {
-                                            text: " +ve Patients",
-                                            nodes:[{
-                                                text: " Patients Receiving Therapy"
-                                            },
-                                                {   text: " Patients Pending Therapy"},
-                                            ]
-                                        },
-                                        {
-                                            text : " -ve Patients"
-                                        }
-                                    ]
-                                },
-                                {
-                                    text: "(2) Patients at Kiran Hospital",
-                                    nodes: [
-                                        {
-                                            text: "+ve Patients",
-                                            nodes:[{
-                                                text: "Patients Receiving Therapy"
-                                            },
-                                                {   text: "Patients Pending Therapy"},
-                                            ]
-                                        },
-                                        {
-                                            text : "(2) -ve Patients"
-                                        }
-                                    ]
-                                },
-                                {
-                                    text: "Patients at Cancer Foundation Hospital",
-                                    nodes: [
-                                        {
-                                            text: "+ve Patients",
-                                            nodes:[{
-                                                text: "Patients Receiving Therapy"
-                                            },
-                                                {   text: "Patients Pending Therapy"},
-                                            ]
-                                        },
-                                        {
-                                            text : "-ve Patients"
-                                        }
-                                    ]
-                                },
-                                {
-                                    text: "(2) Other",
-                                    nodes: [
-                                        {
-                                            text: "(2) +ve Patients",
-                                            nodes:[{
-                                                text: "(2) Patients Receiving Therapy"
-                                            },
-                                                {   text: "Patients Pending Therapy"},
-                                            ]
-                                        },
-                                        {
-                                            text : "-ve Patients"
-                                        }
-                                    ]
-                                }
-                            ]
-                    },
-                    {
-                        text: "Lahore",
-                        nodes:
-                            [
-                                {
-                                    text: "Patients at Jinnah Hospital ",
-                                    nodes: [
-                                        {
-                                            text: "+ve Patients",
-                                            nodes:[{
-                                                text: "Patients Receiving Therapy"
-                                            },
-                                                {   text: "Patients Pending Therapy"},
-                                            ]
-                                        },
-                                        {
-                                            text : "-ve Patients"
-                                        }
-                                    ]
-                                },
-                                {
-                                    text: "(1) Patients at INMOL Cancer Hospital ",
-                                    nodes: [
-                                        {
-                                            text: "(1) +ve Patients",
-                                            nodes:[{
-                                                text: "(1) Patients Receiving Therapy"
-                                            },
-                                                {   text: "Patients Pending Therapy"},
-                                            ]
-                                        },
-                                        {
-                                            text : "-ve Patients"
-                                        }
-                                    ]
-                                },
-                                {
-                                    text: "(1) Patients at Mayo Hospital",
-                                    nodes: [
-                                        {
-                                            text: "(1) +ve Patients",
-                                            nodes:[{
-                                                text: "(1) Patients Receiving Therapy"
-                                            },
-                                                {   text: "Patients Pending Therapy"},
-                                            ]
-                                        },
-                                        {
-                                            text : "-ve Patients"
-                                        }
-                                    ]
-                                },
-                                {
-                                    text: "(1) Others",
-                                    nodes: [
-                                        {
-                                            text: "(1) +ve Patients",
-                                            nodes:[{
-                                                text: "(1) Patients Receiving Therapy"
-                                            },
-                                                {   text: "Patients Pending Therapy"},
-                                            ]
-                                        },
-                                        {
-                                            text : "-ve Patients"
-                                        }
-                                    ]
-                                }
-                            ]
-                    },
-                    {
-                        text: "Helpline",
-                        nodes:
-                            [
-                                {
-                                    text: "Total Calls Attempted: (640)",
-                                    nodes:
-                                        [
-                                            {
-                                                text: "Total Calls Responded: (96) ",
-                                                nodes:
-                                                    [
-                                                        {
-                                                            text : "+ve Patients (3) ",
-                                                            nodes:
-                                                                [
-                                                                    {
-                                                                        text: "Breast Cancer: (1) ",
-                                                                        nodes:
-                                                                            [
-                                                                                {
-                                                                                    text: "patient receiving therapy: () "
-                                                                                },
-                                                                                {
-                                                                                    text: "patient pending therapy: () "
-                                                                                },
-                                                                            ]
-                                                                    },
+    {
+                            text: "Helpline Data",
+                            nodes:
+                                [
+                                    {
+                                        text: "Total Calls Attempted: (754)",
+                                        nodes:
+                                            [
+                                                {
+                                                    text: "Total Calls Responded: (129) ",
+                                                    nodes:
+                                                        [
+                                                            {
+                                                                text : "+ve Patients (2) ",
+                                                                nodes:
+                                                                    [
+                                                                        {
+                                                                            text: "Breast Cancer: (1) ",
+                                                                            nodes:
+                                                                                [
+                                                                                    {
+                                                                                        text: "patient receiving therapy: (1) "
+                                                                                    },
+                                                                                    {
+                                                                                        text: "patient pending therapy: (0) "
+                                                                                    },
+                                                                                ]
+                                                                        },
 
-                                                                    {
-                                                                        text: "Cervical Cancer: (1) ",
-                                                                        nodes:
-                                                                            [
-                                                                                {
-                                                                                    text: "Patient Receiving Therapy: () "
-                                                                                },
-                                                                                {
-                                                                                    text: "Patient Pending Therapy: () "
-                                                                                },
-                                                                            ]
-                                                                    },
+                                                                        {
+                                                                            text: "Cervical Cancer: (1) ",
+                                                                            nodes:
+                                                                                [
+                                                                                    {
+                                                                                        text: "Patient Receiving Therapy: (0) "
+                                                                                    },
+                                                                                    {
+                                                                                        text: "Patient Pending Therapy: (1) "
+                                                                                    },
+                                                                                ]
+                                                                        },
 
-                                                                    {
-                                                                        text: "Ovarian Cancer: (1) ",
-                                                                        nodes:
-                                                                            [
-                                                                                {
-                                                                                    text: "Patient Receiving Therapy: () "
-                                                                                },
-                                                                                {
-                                                                                    text: "Patient Pending Therapy: () "
-                                                                                },
-                                                                            ]
-                                                                    }
-                                                                ]
-                                                        },
-                                                        {
-                                                            text : "Call Again: (14) "
-                                                        },
-                                                        {
-                                                            text: "Not Interested: (79) ",
-                                                            nodes:
-                                                                [
-                                                                    {
-                                                                        text: "Personal: (45) "
-                                                                    },
-                                                                    {
-                                                                        text: "Social: (3) "
-                                                                    },
-                                                                    {
-                                                                        text: "Financial: (31) "
-                                                                    },
-                                                                    {
-                                                                        text: "Other: (0) "
-                                                                    }
-                                                                ]
-                                                        },
+                                                                        {
+                                                                            text: "Ovarian Cancer: (0) ",
+                                                                            nodes:
+                                                                                [
+                                                                                    {
+                                                                                        text: "Patient Receiving Therapy: (0) "
+                                                                                    },
+                                                                                    {
+                                                                                        text: "Patient Pending Therapy: (0) "
+                                                                                    },
+                                                                                ]
+                                                                        }
+                                                                    ]
+                                                            },
+                                                            {
+                                                                text : "Call Again: (137) "
+                                                            },
+                                                            {
+                                                                text: "Not Interested: (87) ",
+                                                                nodes:
+                                                                    [
+                                                                        {
+                                                                            text: "Personal: (42) "
+                                                                        },
+                                                                        {
+                                                                            text: "Social: (5) "
+                                                                        },
+                                                                        {
+                                                                            text: "Financial: (38) "
+                                                                        },
+                                                                        {
+                                                                            text: "Other: (2) "
+                                                                        }
+                                                                    ]
+                                                            },
 
-                                                    ]
-                                            },
-                                            {
-                                                text: "Did Not Respond: (344) ",
-                                            },
-                                            {
-                                                text: "Invalid Numbers: (200) ",
-                                            },
-                                        ]
-                                },
-                            ]
-                    },
+                                                        ]
+                                                },
+                                                {
+                                                    text: "Did Not Respond: (171) ",
+                                                },
+                                                {
+                                                    text: "Invalid Numbers: (230) ",
+                                                },
+                                            ]
+                                    },
+                                ]
+                        }
 
-                ]
-        },
     ];
 
     $('#myTree').treeview({data: mytree});
@@ -283,9 +137,9 @@ function generatePie(id, breast, cervical, ovarian){
 $(document).ready(function(){
 
     generateHierarchy();
-    generatePie('totalPositivePie',35 ,2 ,1 );
+    generatePie('totalPositivePie',30 ,2 ,1 );
     generatePie('khiPositivePie', 2, 1, 0);
-    generatePie('lhrPositivePie', 33, 1, 1);
+    generatePie('lhrPositivePie', 28, 1, 1);
 
 
 
@@ -302,40 +156,40 @@ function getData(type){
     if(type==='total'){
         data  =  [
 
-                        {id: 1, name: 'Total High Risk (30)', parent: 0},
-                        {id: 2, name: 'Reached Hospital (20)', parent: 1},
-                        {id: 3, name: 'Did not Reached Hospital(10)', parent: 1},
-                        {id: 4, name: 'Positive (15)', parent: 2},
-                        {id: 5, name: 'Negative (3)', parent: 2},
-                        {id: 6, name: 'Results Awaited (2)', parent: 2},
-                        {id: 7, name: 'Therapy Started (10)', parent: 4},
-                        {id: 8, name: 'Therapy Pending (5)', parent: 4},
+                        {id: 1, name: 'Total High Risk (33)', parent: 0},
+                        {id: 2, name: 'Reached Hospital (4)', parent: 1},
+                        {id: 3, name: 'Did not Reach Hospital(29)', parent: 1},
+                        {id: 4, name: 'Positive (2)', parent: 2},
+                        {id: 5, name: 'Negative (2)', parent: 2},
+                        {id: 6, name: 'Results Awaited (0)', parent: 2},
+                        {id: 7, name: 'Therapy Started (1)', parent: 4},
+                        {id: 8, name: 'Therapy Pending (1)', parent: 4},
 
                     ];
     }else if(type==='karachi'){
         data  =  [
 
-                                {id: 1, name: 'Karachi High Risk (30)', parent: 0},
-                                {id: 2, name: 'Reached Hospital (20)', parent: 1},
-                                {id: 3, name: 'Did not Reached Hospital(10)', parent: 1},
-                                {id: 4, name: 'Positive (15)', parent: 2},
-                                {id: 5, name: 'Negative (3)', parent: 2},
-                                {id: 6, name: 'Results Awaited (2)', parent: 2},
-                                {id: 7, name: 'Therapy Started (10)', parent: 4},
-                                {id: 8, name: 'Therapy Pending (5)', parent: 4},
+                                {id: 1, name: 'Karachi High Risk (3)', parent: 0},
+                                {id: 2, name: 'Reached Hospital (1)', parent: 1},
+                                {id: 3, name: 'Did not Reach Hospital(2)', parent: 1},
+                                {id: 4, name: 'Positive (1)', parent: 2},
+                                {id: 5, name: 'Negative (0)', parent: 2},
+                                {id: 6, name: 'Results Awaited (0)', parent: 2},
+                                {id: 7, name: 'Therapy Started (0)', parent: 4},
+                                {id: 8, name: 'Therapy Pending (1)', parent: 4},
 
                             ];
     }else if(type==='lahore'){
         data  =  [
 
                                 {id: 1, name: 'Lahore High Risk (30)', parent: 0},
-                                {id: 2, name: 'Reached Hospital (20)', parent: 1},
-                                {id: 3, name: 'Did not Reached Hospital(10)', parent: 1},
-                                {id: 4, name: 'Positive (15)', parent: 2},
-                                {id: 5, name: 'Negative (3)', parent: 2},
-                                {id: 6, name: 'Results Awaited (2)', parent: 2},
-                                {id: 7, name: 'Therapy Started (10)', parent: 4},
-                                {id: 8, name: 'Therapy Pending (5)', parent: 4},
+                                {id: 2, name: 'Reached Hospital (3)', parent: 1},
+                                {id: 3, name: 'Did not Reach Hospital(27)', parent: 1},
+                                {id: 4, name: 'Positive (1)', parent: 2},
+                                {id: 5, name: 'Negative (2)', parent: 2},
+                                {id: 6, name: 'Results Awaited (0)', parent: 2},
+                                {id: 7, name: 'Therapy Started (1)', parent: 4},
+                                {id: 8, name: 'Therapy Pending (0)', parent: 4},
 
                             ];
     }
