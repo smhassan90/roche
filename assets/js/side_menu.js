@@ -9,7 +9,7 @@ function generateHierarchy(){
                                         nodes:
                                             [
                                                 {
-                                                    text: "Total Calls Responded: (129) ",
+                                                    text: "Total Calls Responded: (288) ",
                                                     nodes:
                                                         [
                                                             {
@@ -57,7 +57,7 @@ function generateHierarchy(){
                                                                     ]
                                                             },
                                                             {
-                                                                text : "Call Again: (137) "
+                                                                text : "Call Again: (81) "
                                                             },
                                                             {
                                                                 text: "Not Interested: (87) ",
@@ -81,10 +81,10 @@ function generateHierarchy(){
                                                         ]
                                                 },
                                                 {
-                                                    text: "Did Not Respond: (171) ",
+                                                    text: "Did Not Respond: (273) ",
                                                 },
                                                 {
-                                                    text: "Invalid Numbers: (230) ",
+                                                    text: "Invalid Numbers: (193) ",
                                                 },
                                             ]
                                     },
