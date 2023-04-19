@@ -10,10 +10,10 @@ $(document).ready(function(){
         var staffType = 3;
         var url = AllConstant.baseURL + "/loginServerAttempt";
         if(id==='kiran' && pass==='kiran123'){
-            swal("Successfully!", "Kiran, You are logged in", "success").done();
+            swal("Login Successful!", "Kiran, You are logged in", "success").done();
             self.location="side_menu.html";
-        }else if(id==='sana' && pass==='sana123'){
-                         swal("Successfully!", "Sana, You are logged in", "success").done();
+        }else if(id==='roche.pakistan' && pass==='roche'){
+                         swal("Login Successful!", "Roche Pakistan, You are logged in", "success").done();
                          self.location="side_menu.html";
         }else
 
