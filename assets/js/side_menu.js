@@ -156,9 +156,9 @@ function getData(type){
     if(type==='total'){
         data  =  [
 
-                        {id: 1, name: 'Total High Risk (33)', parent: 0},
+                        {id: 1, name: 'Total High Risk (35)', parent: 0},
                         {id: 2, name: 'Reached Hospital (4)', parent: 1},
-                        {id: 3, name: 'Did not Reach Hospital(29)', parent: 1},
+                        {id: 3, name: 'Did not Reach Hospital(31)', parent: 1},
                         {id: 4, name: 'Positive (2)', parent: 2},
                         {id: 5, name: 'Negative (2)', parent: 2},
                         {id: 6, name: 'Results Awaited (0)', parent: 2},
@@ -182,9 +182,9 @@ function getData(type){
     }else if(type==='lahore'){
         data  =  [
 
-                                {id: 1, name: 'Lahore High Risk (30)', parent: 0},
+                                {id: 1, name: 'Lahore High Risk (32)', parent: 0},
                                 {id: 2, name: 'Reached Hospital (3)', parent: 1},
-                                {id: 3, name: 'Did not Reach Hospital(27)', parent: 1},
+                                {id: 3, name: 'Did not Reach Hospital(29)', parent: 1},
                                 {id: 4, name: 'Positive (1)', parent: 2},
                                 {id: 5, name: 'Negative (2)', parent: 2},
                                 {id: 6, name: 'Results Awaited (0)', parent: 2},
