@@ -137,9 +137,9 @@ function generatePie(id, breast, cervical, ovarian){
 $(document).ready(function(){
 
     generateHierarchy();
-    generatePie('totalPositivePie',30 ,2 ,1 );
+    generatePie('totalPositivePie',32 ,2 ,1 );
     generatePie('khiPositivePie', 2, 1, 0);
-    generatePie('lhrPositivePie', 28, 1, 1);
+    generatePie('lhrPositivePie', 30, 1, 1);
 
 
 
