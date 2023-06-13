@@ -137,9 +137,9 @@ function generatePie(id, breast, cervical, ovarian){
 $(document).ready(function(){
 
     generateHierarchy();
-    generatePie('totalPositivePie',32 ,2 ,1 );
-    generatePie('khiPositivePie', 2, 1, 0);
-    generatePie('lhrPositivePie', 30, 1, 1);
+    generatePie('totalPositivePie',36 ,3 ,5 );
+    generatePie('khiPositivePie', 2, 1, 1);
+    generatePie('lhrPositivePie', 34, 2, 4);
 
 
 
@@ -156,12 +156,12 @@ function getData(type){
     if(type==='total'){
         data  =  [
 
-                        {id: 1, name: 'Total High Risk (35)', parent: 0},
-                        {id: 2, name: 'Reached Hospital (4)', parent: 1},
-                        {id: 3, name: 'Did not Reach Hospital(31)', parent: 1},
+                        {id: 1, name: 'Total High Risk (44)', parent: 0},
+                        {id: 2, name: 'Reached Hospital (22)', parent: 1},
+                        {id: 3, name: 'Did not Reach Hospital(22)', parent: 1},
                         {id: 4, name: 'Positive (2)', parent: 2},
-                        {id: 5, name: 'Negative (2)', parent: 2},
-                        {id: 6, name: 'Results Awaited (0)', parent: 2},
+                        {id: 5, name: 'Negative (6)', parent: 2},
+                        {id: 6, name: 'Results Awaited (12)', parent: 2},
                         {id: 7, name: 'Therapy Started (1)', parent: 4},
                         {id: 8, name: 'Therapy Pending (1)', parent: 4},
 
@@ -169,9 +169,9 @@ function getData(type){
     }else if(type==='karachi'){
         data  =  [
 
-                                {id: 1, name: 'Karachi High Risk (3)', parent: 0},
+                                {id: 1, name: 'Karachi High Risk (4)', parent: 0},
                                 {id: 2, name: 'Reached Hospital (1)', parent: 1},
-                                {id: 3, name: 'Did not Reach Hospital(2)', parent: 1},
+                                {id: 3, name: 'Did not Reach Hospital(3)', parent: 1},
                                 {id: 4, name: 'Positive (1)', parent: 2},
                                 {id: 5, name: 'Negative (0)', parent: 2},
                                 {id: 6, name: 'Results Awaited (0)', parent: 2},
@@ -182,12 +182,12 @@ function getData(type){
     }else if(type==='lahore'){
         data  =  [
 
-                                {id: 1, name: 'Lahore High Risk (32)', parent: 0},
-                                {id: 2, name: 'Reached Hospital (3)', parent: 1},
-                                {id: 3, name: 'Did not Reach Hospital(29)', parent: 1},
+                                {id: 1, name: 'Lahore High Risk (40)', parent: 0},
+                                {id: 2, name: 'Reached Hospital (21)', parent: 1},
+                                {id: 3, name: 'Did not Reach Hospital(19)', parent: 1},
                                 {id: 4, name: 'Positive (1)', parent: 2},
-                                {id: 5, name: 'Negative (2)', parent: 2},
-                                {id: 6, name: 'Results Awaited (0)', parent: 2},
+                                {id: 5, name: 'Negative (6)', parent: 2},
+                                {id: 6, name: 'Results Awaited (12)', parent: 2},
                                 {id: 7, name: 'Therapy Started (1)', parent: 4},
                                 {id: 8, name: 'Therapy Pending (0)', parent: 4},
 
@@ -196,7 +196,7 @@ function getData(type){
     return data;
 }
 
-function drawTree( type) {
+function drawTree(type) {
     var data = getData(type);
 
 
